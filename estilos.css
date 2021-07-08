@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700&family=Indie+Flower&display=swap');
+body{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+.fontAnton{
+	font-family: 'Indie Flower', cursive;
+	font-weight: 400;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+div table tbody tr td{
+	color: black;
+	font-size: 20;
+	background: pink;
+	border: 5px solid black;
+	padding: 15px;
+
+}
+.respmenu a { 
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid fuchsia;
+  max-width: 200px;
+  background: black;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+}
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;  
+}
+ 
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 48px;
+  pointer-events: none;
+}
+ 
+.respmenu input[type="checkbox"] {
+  opacity: 0; 
+}
+ 
+.respmenu {
+  color: white;
+  position: relative; 
+  background: black;
+  min-height: 48px;
+}
+ 
+.respmenu nav {
+  display: none;
+}
+ 
+.respmenu input:checked ~ nav {
+  display: block;
+}
+ 
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+ 
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+@media all and (max-width: 768){
+	.respmenu{
+		display: none;
+	}
+}
+.header{
+	min-height: 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 5px solid white;
+}
+
+.father{
+	height: 140px;
+	background: black;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.logo{
+	height: 100;
+	width: 400;
+	flex-grow: 3;
+	flex-direction: row;
+	align-items: flex-end;
+
+}
+
+/*@media all and (max-width: 768px){
+	.logo{
+		display: none;
+	}
+}*/
+.hiji{
+	flex-grow: 5;
+}
+#menu ul {
+ list-style:none;
+ margin:0;
+ padding:0;
+}
+#menu ul li {
+ background-color: black;
+}
+#menu ul a {
+ display:block;
+ color: white;
+ text-decoration:none;
+ font-weight:400;
+ font-size:20px;
+ padding:15px;
+ font-family:'Baloo Tammudu 2', cursive; 
+ text-transform:uppercase;
+ letter-spacing:1px;
+}
+#menu ul li {
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+}
+#menu ul li:hover {
+ background:grey;
+}
+#menu ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+#menu ul ul li {
+ float:none;
+ width:150px
+}
+#menu ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+#menu ul li:hover > ul {
+ display:block;
+}
+
+.ingresar{
+	flex-grow: 1;
+	padding-bottom: 70px;
+	overflow: hidden;
+}
+@media all and (max-width: 768){
+	.header{
+		display: none;
+	}
+}
+
+/*.banner{
+	background-image: url("../media/lady1fit.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+
+}
+@media all and(max-width: 576px){
+	.banner{
+	background-image: url("../media/ladyfit-mujer-frente_mob.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+
+}
+}*/
+h2{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 30px;
+	color: fuchsia;
+	text-align: center;
+	width: 100%;
+	animation-duration: 2s;
+	animation-name: aparecer;
+}
+@keyframes aparecer {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+
+
+.categorias{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+.destacados{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 30px;
+	text-align: center;
+	color: fuchsia;
+}
+.padre{
+	/*height: 1400px;*/
+	width: 100%;
+	background: white;
+	/*display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;*/
+	
+
+}
+.producto img{
+	width: 100%;
+	margin: auto;
+	padding: 5px;
+	background: white;
+	/*transition: 1s;*/
+}
+/*.producto:hover{
+	transform: scale(2);
+}*/
+
+#nuestronew{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 22px;
+	color: black;
+	background-color: beige;
+	margin: 0px auto;
+	padding: 10px;
+	height: 250px;
+	width: 100%;
+	text-align: left;
+}
+.boton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: black;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.boton:hover {
+    background-color: grey;
+}
+
+.boton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+
+@media all and (max-width: 576px){
+	#nuestronew{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 15px;
+	color: black;
+	background-color: beige;
+	margin: 0px auto;
+	padding: 10px;
+	height: 250px;
+	width: 100%;
+	text-align: left;
+}
+.btn-primary {
+    color: white;
+	background-color: black;
+	border-color: transparent;
+}
+.btn-primary:hover {
+    color: white;
+    background-color: grey;
+    border-color: transparent;
+	}
+}
+/*--- Este css pertenece a productos---*/
+.mochi{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 30px;
+	text-align: center;
+}
+.productopadre{
+	/*height: 400px;*/
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.buzo{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 30px;
+	text-align: center;
+}
+.productotio{
+	/*height: 400px;*/
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.pelot{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 5px;
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-left-width: 0px;
+    border-left-style: solid;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.productotia{
+	/*height: 400px;*/
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+.band{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 30px;
+	text-align: center;
+}
+.productosobrino{
+	/*height: 400px;*/
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.rem{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 30px;
+	text-align: center;
+}
+.productosobrina{
+	/*height: 400px;*/
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.productonieta{
+	/*height: 400px;*/
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.contenedor img{
+	width: 400px;
+	margin: 10px;
+	padding: 5px;
+	/*transition: 1s;*/
+}
+.contenedor img:hover{
+	transform: translate(10px, 20px);
+}
+/*--- Este css pertenece a regala ---*/
+.regal{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 40px;
+	text-align: center;
+}
+.estilo{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 26px;
+}
+.medio{
+	width: 500px;
+	margin: 0px auto;
+
+}
+.tab{
+	font-family: 'Indie Flower', cursive;
+	font-weight: 600;
+	font-size: 26px; 
+	text-align: center;
+}
+/*--- Este css pertenece a nosotros---*/
+.aldanayfernando{
+	min-height: 700px;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+
+}
+
+.aldi{
+	margin: 10px;
+	width: 600px;
+	height: 700px;
+	flex-grow: 3;
+	order: 2;
+	overflow: hidden;
+}
+.fer{
+	font-family: 'Indie Flower', cursive;
+	font-weight: 600;
+	font-size: 26px;
+	margin: 10px;
+	padding: 10px;
+	height: 400px;
+	width: 600px;
+	flex-grow: 7;
+	order: 1;
+	font-size: 22px;
+}
+/*--- Este css pertenece a preguntas frecuentes---*/
+.pregunt{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 26px;
+}
+.tamaño{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 26px;
+}
+.conta{
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 30px;
+	text-align: center;
+}
+/*---Este css pertenece a logos del footer---*/
+.logos{
+	background-color: black;
+	border-top-color: white;
+	height: 250px;
+	color:beige;
+	font-size: 1rem;
+	font-family: 'Baloo Tammudu 2', cursive;
+
+}
+.btn-whatsapp {
+        display:block;
+        width:70px;
+        height:70px;
+        color: white;
+        position: fixed;
+        right:20px;
+        bottom:20px;
+        border-radius:50%;
+        line-height:80px;
+        text-align:center;
+        z-index:999;
+       
+}
